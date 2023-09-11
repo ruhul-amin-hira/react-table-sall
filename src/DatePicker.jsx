@@ -6,8 +6,11 @@ import formateDate from './utils/dateFormatter';
 
 const DatePicker = ({date, setDate}) => {
     const [value, onChange] = useState(date);
-    console.log(value)
    // console.log(formateDate(value))
+
+
+   //console.log(value.toLocaleDateString())
+
    useEffect(()=>{
     setDate(value)
    }, [value, setDate])

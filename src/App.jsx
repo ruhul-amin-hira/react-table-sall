@@ -1,3 +1,4 @@
+import Dashboard from "./Dashboard";
 import DateSeclect from "./DateSeclect";
 import { ContextProvider } from "./context/Context";
 
@@ -6,7 +7,7 @@ function App() {
     <ContextProvider>
       <div className="container">
         <DateSeclect />
-        <h1>hello</h1>
+        <Dashboard />
       </div>
     </ContextProvider>
   );

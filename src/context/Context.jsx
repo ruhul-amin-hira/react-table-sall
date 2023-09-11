@@ -10,12 +10,15 @@ export const ContextProvider = (props) => {
 
     const [startDate, setStartDate] = useState(new Date())
     const [endDate, setEndDate] = useState(new Date())
+    const [data, setData] = useState(null)
 
     const value={
         startDate,
         setStartDate,
         endDate,
-        setEndDate
+        setEndDate,
+        data,
+        setData
     }
 
   return (

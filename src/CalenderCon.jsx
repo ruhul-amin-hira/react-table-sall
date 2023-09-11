@@ -1,10 +1,13 @@
 /* eslint-disable react/prop-types */
 import React, { useEffect, useRef, useState } from 'react'
 import DatePicker from "./DatePicker"
+import formateDate from './utils/dateFormatter';
+
 
 const CalenderCon = ({date, setDate}) => {
 
-  const dateFomate = date.toISOString().split("T")[0]
+  // const dateFomate = date.toISOString().split("T")[0]
+  const dateFomate = formateDate(date).split(" ")[0];
 
   const [show, setShow] = useState(false)
   const inRef = useRef(null)
